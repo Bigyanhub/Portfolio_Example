@@ -102,19 +102,24 @@ A modern, responsive portfolio website showcasing UI/UX design and web developme
 ```
 GreatStack_Portfolio/
 │
-├── index.html              # Main HTML file
-├── style.css               # CSS styles and responsive design
-├── README.md               # Project documentation
+├── index.html                # Main HTML file
+├── style.css                 # CSS styles and responsive design
+├── README.md                 # Project documentation
 │
 └── images/
-    ├── background.png      # Hero section background
-    ├── phone-background.png # Mobile hero background
-    ├── Bigyan.png          # Logo
-    ├── user.png            # Profile picture
-    ├── work-1.png          # Portfolio project 1
-    ├── work-2.png          # Portfolio project 2
-    ├── work-3.png          # Portfolio project 3
-    └── my-cv.pdf           # CV/Resume file
+  ├── background.png        # Hero section background
+  ├── phone-background.png  # Mobile hero background
+  ├── Bigyan.png            # Logo
+  ├── user.png              # Profile picture
+  ├── work-1.png            # Portfolio project 1
+  ├── work-2.png            # Portfolio project 2
+  ├── work-3.png            # Portfolio project 3
+  ├── my-cv.pdf             # CV/Resume file
+  ├── demo_1.png            # Portfolio demo screenshot 1
+  ├── demo_2.png            # Portfolio demo screenshot 2
+  ├── demo_3.png            # Portfolio demo screenshot 3
+  ├── demo_4.png            # Portfolio demo screenshot 4
+  └── demo_5.png            # Portfolio demo screenshot 5
 ```
 
 ## ⚙️ Configuration
