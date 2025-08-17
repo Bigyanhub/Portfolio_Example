@@ -1,421 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bigyan Basnet - UI/UX Designer and Web Developer from Nepal. Portfolio showcasing web design, app development, and UI/UX design services."
+    />
+    <title>Bigyan Basnet - UI/UX Designer & Developer</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Bigyan Basnet - UI/UX Designer and Web Developer from Nepal. Portfolio showcasing web design, app development, and UI/UX design services.">
-  <title>Bigyan Basnet - UI/UX Designer & Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/0cb699274b.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/0cb699274b.js" crossorigin="anonymous"></script>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-C0JG186MDX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-C0JG186MDX"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-C0JG186MDX');
-</script>
+      gtag("config", "G-C0JG186MDX");
+    </script>
 
-</head>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+  // EmailJS expects the public key string as the first argument to init
+  // (not an object). Replace the string below with your real public key.
+  emailjs.init("TcpX2qK7KZmdoAiz-");
+      })();
+    </script>
+  </head>
 
-<body>
-  <!-- Header Section -->
-  <header id="header">
-    <div class="container">
-      <nav role="navigation" aria-label="Main navigation">
-        <img src="images/logo.png" alt="Bigyan Basnet Logo" class="logo">
-        <ul id="sidemenu" role="menubar">
-          <li role="none"><a href="#header" role="menuitem">Home</a></li>
-          <li role="none"><a href="#about" role="menuitem">About</a></li>
-          <li role="none"><a href="#services" role="menuitem">Services</a></li>
-          <li role="none"><a href="#portfolio" role="menuitem">Portfolio</a></li>
-          <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
-          <li role="none">
-            <button class="menu-close" onclick="closeMenu()" aria-label="Close menu">
-              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-            </button>
-          </li>
-        </ul>
-        <button class="menu-toggle" onclick="openMenu()" aria-label="Open menu">
-          <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        </button>
-      </nav>
+  <body>
+    <!-- Header Section -->
+    <header id="header">
+      <div class="container">
+        <nav role="navigation" aria-label="Main navigation">
+          <img src="images/logo.png" alt="Bigyan Basnet Logo" class="logo" />
+          <ul id="sidemenu" role="menubar">
+            <li role="none"><a href="#header" role="menuitem">Home</a></li>
+            <li role="none"><a href="#about" role="menuitem">About</a></li>
+            <li role="none">
+              <a href="#services" role="menuitem">Services</a>
+            </li>
+            <li role="none">
+              <a href="#portfolio" role="menuitem">Portfolio</a>
+            </li>
+            <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            <li role="none">
+              <button
+                class="menu-close"
+                onclick="closeMenu()"
+                aria-label="Close menu"
+              >
+                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+              </button>
+            </li>
+          </ul>
+          <button
+            class="menu-toggle"
+            onclick="openMenu()"
+            aria-label="Open menu"
+          >
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+        </nav>
 
-      <div class="header-text">
-        <p>UI/UX Designer</p>
-        <h1>Hi, I'm <span>Bigyan</span> <br>Basnet From Nepal</h1>
-      </div>
-    </div>
-  </header>
- 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="about-col-1">
-          <img src="images/about_img.png" alt="Bigyan Basnet Profile Picture">
-        </div>
-        <div class="about-col-2">
-          <h2 class="sub-title">About Me</h2>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur beatae delectus voluptatem officia
-            aperiam? Sint soluta doloremque nesciunt doloribus, similique consectetur voluptates, harum aut obcaecati
-            incidunt, assumenda ab molestias. Odio dolores doloribus, dolorem quo molestiae magnam fugiat cumque
-            aliquam.</p>
-
-          <div class="tab-titles" role="tablist">
-            <button class="tab-links active-link" onclick="openTab('skills')" role="tab" aria-selected="true" aria-controls="skills">Skills</button>
-            <button class="tab-links" onclick="openTab('experience')" role="tab" aria-selected="false" aria-controls="experience">Experience</button>
-            <button class="tab-links" onclick="openTab('education')" role="tab" aria-selected="false" aria-controls="education">Education</button>
-          </div>
-
-          <div class="tab-contents active-tab" id="skills" role="tabpanel" aria-labelledby="skills-tab">
-            <ul>
-              <li><span>UI/UX</span> <br> Designing Web/App interfaces</li>
-              <li><span>Web Development</span> <br> Web app development</li>
-              <li><span>App Development</span> <br> Building Android/iOS apps</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-            <ul>
-              <li><span>2021 - Current</span> <br>UI/UX Design Training at ET Institute</li>
-              <li><span>2019 - 2021</span> <br>Team lead at StarApp LLC.</li>
-              <li><span>2017 - 2019</span> <br>Internship at ekrat eCommerce.</li>
-            </ul>
-          </div>
-
-          <div class="tab-contents" id="education" role="tabpanel" aria-labelledby="education-tab">
-            <ul>
-              <li><span>2016</span> <br>UI/UX Design Training at ET Institute</li>
-              <li><span>2016</span> <br>MBA from MIT Bangalore.</li>
-              <li><span>2014</span> <br>BBA from ISM Bangalore.</li>
-            </ul>
-          </div>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Bigyan</span> <br />Basnet From Nepal</h1>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- Services Section -->
-  <section id="services">
-    <div class="container">
-      <h2 class="sub-title">My Services</h2>
-      <div class="services-list">
-        <article class="service-item">
-          <i class="fa-solid fa-code" aria-hidden="true"></i>
-          <h3>Web Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita amet cupiditate. Doloribus,
-            dolor ipsa.</p>
-          <a href="#" class="service-link">Learn more</a>
-        </article>
-        <article class="service-item">
-          <i class="fa-solid fa-crop-simple" aria-hidden="true"></i>
-          <h3>UI/UX Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita amet cupiditate. Doloribus,
-            dolor ipsa.</p>
-          <a href="#" class="service-link">Learn more</a>
-        </article>
-        <article class="service-item">
-          <i class="fa-brands fa-app-store" aria-hidden="true"></i>
-          <h3>App Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate expedita amet cupiditate. Doloribus,
-            dolor ipsa.</p>
-          <a href="#" class="service-link">Learn more</a>
-        </article>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/about_img.png"
+              alt="Bigyan Basnet Profile Picture"
+            />
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <p>
+              I'm a passionate full stack developer with experience building
+              scalable web applications using the MERN stack (MongoDB, Express,
+              React, Node.js). I enjoy solving real-world problems and learning
+              new technologies. I focus on writing clean, maintainable code and
+              delivering user-friendly solutions.
+            </p>
 
-  <!-- Portfolio Section -->
-  <section id="portfolio">
-    <div class="container">
-      <h2 class="sub-title">My Work</h2>
-      <div class="work-list">
-        <article class="work">
-          <img src="images/work-1.png" alt="Social Media App Project">
-          <div class="layer">
-            <h3>Social Media App</h3>
-            <p>The app connects you to the talented people around the world.
-              Download it from play store.</p>
-            <a href="#" aria-label="View Social Media App project">
-              <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-        <article class="work">
-          <img src="images/work-2.png" alt="Music App Project">
-          <div class="layer">
-            <h3>Music App</h3>
-            <p>The app connects you to the talented people around the world.
-              Download it from play store.</p>
-            <a href="#" aria-label="View Music App project">
-              <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-        <article class="work">
-          <img src="images/work-3.png" alt="Online Shopping App Project">
-          <div class="layer">
-            <h3>Online Shopping App</h3>
-            <p>The app connects you to the talented people around the world.
-              Download it from play store.</p>
-            <a href="#" aria-label="View Online Shopping App project">
-              <i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i>
-            </a>
-          </div>
-        </article>
-      </div>
-      <a href="#" class="btn">See more</a>
-    </div>
-  </section>
+            <div class="tab-titles" role="tablist">
+              <button
+                class="tab-links active-link"
+                onclick="openTab('skills', event)"
+                role="tab"
+                aria-selected="true"
+                aria-controls="skills"
+              >
+                Skills
+              </button>
+              <button
+                class="tab-links"
+                onclick="openTab('experience', event)"
+                role="tab"
+                aria-selected="false"
+                aria-controls="experience"
+              >
+                Experience
+              </button>
+              <button
+                class="tab-links"
+                onclick="openTab('education', event)"
+                role="tab"
+                aria-selected="false"
+                aria-controls="education"
+              >
+                Education
+              </button>
+            </div>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="contact-left">
-          <h2 class="sub-title">Contact Me</h2>
-          <p><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> contact@example.com</p>
-          <p><i class="fa-solid fa-square-phone" aria-hidden="true"></i> 9800000000</p>
-          <div class="social-icons">
-            <a href="https://facebook.com" aria-label="Facebook Profile">
-              <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="#" aria-label="Twitter Profile">
-              <i class="fa-brands fa-twitter-square" aria-hidden="true"></i>
-            </a>
-            <a href="#" aria-label="Instagram Profile">
-              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="#" aria-label="LinkedIn Profile">
-              <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-            </a>
+            <div
+              class="tab-contents active-tab"
+              id="skills"
+              role="tabpanel"
+              aria-labelledby="skills-tab"
+            >
+              <ul>
+                <li>
+                  <span>Full Stack Development</span> <br />
+                  Building web applications with MERN stack
+                </li>
+                <li>
+                  <span>Web Development</span> <br />
+                  Creating responsive and interactive websites
+                </li>
+                <li>
+                  <span>App Development</span> <br />
+                  Developing Android/iOS apps with React Native
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="tab-contents"
+              id="experience"
+              role="tabpanel"
+              aria-labelledby="experience-tab"
+            >
+              <ul>
+                <li>
+                  <span>2023 - Current</span> <br />Full Stack Developer at
+                  TechNepal Solutions
+                </li>
+                <li><span>2021 - 2023</span> <br />Freelance Web Developer</li>
+                <li>
+                  <span>2019 - 2021</span> <br />Internship at ekrat eCommerce.
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="tab-contents"
+              id="education"
+              role="tabpanel"
+              aria-labelledby="education-tab"
+            >
+              <ul>
+                <li>
+                  <span>2022 - Current</span> <br />BSc in Computer Science,
+                  Tribhuvan University
+                </li>
+                <li><span>2021</span> <br />+2 Science from Namuna College.</li>
+                <li><span>2020</span> <br />SEE from Mount Everest School.</li>
+              </ul>
+            </div>
           </div>
-          <a href="images/Bigyan-cv.pdf" download class="btn btn2">Download CV</a>
-        </div>
-        <div class="contact-right">
-          <form name="submit-to-google-sheet" novalidate>
-            <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" name="Name" placeholder="Your Name" required>
-            
-            <label for="email" class="sr-only">Email</label>
-            <input type="email" id="email" name="Email" placeholder="Your Email" required>
-            
-            <label for="message" class="sr-only">Message</label>
-            <textarea id="message" name="Message" rows="6" placeholder="Your Message" required></textarea>
-            
-            <button class="btn btn2" type="submit">Submit</button>
-          </form>
-          <div id="msg" role="alert" aria-live="polite"></div>
         </div>
       </div>
-    </div>
-    <footer class="copyright">
-      <p>Copyright &copy; Bigyan. Made with <i class="fa-solid fa-heart" aria-hidden="true"></i> by Easy Tutorials</p>
-    </footer>
-  </section>
+    </section>
 
-  <script>
-    'use strict';
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="services-list">
+          <article class="service-item">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              expedita amet cupiditate. Doloribus, dolor ipsa.
+            </p>
+            <a href="#" class="service-link">Learn more</a>
+          </article>
+          <article class="service-item">
+            <i class="fa-solid fa-crop-simple" aria-hidden="true"></i>
+            <h3>UI/UX Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              expedita amet cupiditate. Doloribus, dolor ipsa.
+            </p>
+            <a href="#" class="service-link">Learn more</a>
+          </article>
+          <article class="service-item">
+            <i class="fa-brands fa-app-store" aria-hidden="true"></i>
+            <h3>App Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              expedita amet cupiditate. Doloribus, dolor ipsa.
+            </p>
+            <a href="#" class="service-link">Learn more</a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    // Google Sheets form submission
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbx-TYYEME202eqBjm2hV8gMAr9s-9SgaLWaYEzHV37Tpbv6ByVOEysIDSj2yBzTksAu/exec';
-    const form = document.forms['submit-to-google-sheet'];
-    const msg = document.getElementById("msg");
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+          <article class="work">
+            <img src="images/work-1.png" alt="Social Media App Project" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#" aria-label="View Social Media App project">
+                <i
+                  class="fa-solid fa-up-right-from-square"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </article>
+          <article class="work">
+            <img src="images/work-2.png" alt="Music App Project" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#" aria-label="View Music App project">
+                <i
+                  class="fa-solid fa-up-right-from-square"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </article>
+          <article class="work">
+            <img src="images/work-3.png" alt="Online Shopping App Project" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connects you to the talented people around the world.
+                Download it from play store.
+              </p>
+              <a href="#" aria-label="View Online Shopping App project">
+                <i
+                  class="fa-solid fa-up-right-from-square"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </article>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </section>
 
-    if (form) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Show loading state
-        msg.innerHTML = "Sending message...";
-        msg.className = "loading";
-        
-        fetch(scriptURL, { 
-          method: 'POST', 
-          body: new FormData(form)
-        })
-        .then(response => {
-          if (response.ok) {
-            msg.innerHTML = "Message sent successfully!";
-            msg.className = "success";
-            form.reset();
-          } else {
-            throw new Error('Network response was not ok');
-          }
-        })
-        .catch(error => {
-          console.error('Error!', error);
-          msg.innerHTML = "Failed to send message. Please try again.";
-          msg.className = "error";
-        })
-        .finally(() => {
-          setTimeout(() => {
-            msg.innerHTML = "";
-            msg.className = "";
-          }, 5000);
-        });
-      });
-    }
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h2 class="sub-title">Contact Me</h2>
+            <p>
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              contact@example.com
+            </p>
+            <p>
+              <i class="fa-solid fa-square-phone" aria-hidden="true"></i>
+              9800000000
+            </p>
+            <div class="social-icons">
+              <a href="https://facebook.com" aria-label="Facebook Profile">
+                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="Twitter Profile">
+                <i class="fa-brands fa-twitter-square" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="Instagram Profile">
+                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+            <a href="images/Bigyan-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet" novalidate>
+              <label for="name" class="sr-only">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="Name"
+                placeholder="Your Name"
+                required
+              />
 
-    // Tab functionality
-    const tabLinks = document.getElementsByClassName("tab-links");
-    const tabContents = document.getElementsByClassName("tab-contents");
+              <label for="email" class="sr-only">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
 
-    function openTab(tabName) {
-      // Remove active classes from all tabs
-      Array.from(tabLinks).forEach(tabLink => {
-        tabLink.classList.remove("active-link");
-        tabLink.setAttribute("aria-selected", "false");
-      });
-      
-      Array.from(tabContents).forEach(tabContent => {
-        tabContent.classList.remove("active-tab");
-      });
+              <label for="message" class="sr-only">Message</label>
+              <textarea
+                id="message"
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
 
-      // Add active class to clicked tab and corresponding content
-      event.currentTarget.classList.add("active-link");
-      event.currentTarget.setAttribute("aria-selected", "true");
-      
-      const targetTab = document.getElementById(tabName);
-      if (targetTab) {
-        targetTab.classList.add("active-tab");
-      }
-    }
+              <!-- pass the event so the handler can prevent default submission -->
+              <button class="btn btn2" type="submit" onclick="sendMail(event)">Submit</button>
+            </form>
+            <div id="msg" role="alert" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+      <footer class="copyright">
+        <p>
+          Copyright &copy; Bigyan. Made with
+          <i class="fa-solid fa-heart" aria-hidden="true"></i> by Easy Tutorials
+        </p>
+      </footer>
+    </section>
+  </body>
 
-    // Mobile menu functionality
-    const sideMenu = document.getElementById("sidemenu");
-
-    function openMenu() {
-      if (sideMenu) {
-        sideMenu.style.right = "0";
-        sideMenu.setAttribute("aria-hidden", "false");
-        // Focus trap for accessibility
-        const firstMenuItem = sideMenu.querySelector('a');
-        if (firstMenuItem) firstMenuItem.focus();
-      }
-    }
-
-    function closeMenu() {
-      if (sideMenu) {
-        sideMenu.style.right = "-200px";
-        sideMenu.setAttribute("aria-hidden", "true");
-      }
-    }
-
-    // Close menu when clicking on menu links (mobile)
-    document.querySelectorAll('#sidemenu a').forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth <= 600) {
-          closeMenu();
-        }
-      });
-    });
-
-    // Close menu when pressing Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && sideMenu && sideMenu.style.right === "0px") {
-        closeMenu();
-      }
-    });
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
-    // Form validation enhancement
-    const inputs = document.querySelectorAll('input[required], textarea[required]');
-    inputs.forEach(input => {
-      input.addEventListener('blur', function() {
-        if (!this.validity.valid) {
-          this.classList.add('invalid');
-        } else {
-          this.classList.remove('invalid');
-        }
-      });
-
-      input.addEventListener('input', function() {
-        if (this.classList.contains('invalid') && this.validity.valid) {
-          this.classList.remove('invalid');
-        }
-      });
-    });
-
-    // Intersection Observer for animations (optional enhancement)
-    if ('IntersectionObserver' in window) {
-      const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-      };
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
-          }
-        });
-      }, observerOptions);
-
-      // Observe sections for animation
-      document.querySelectorAll('section').forEach(section => {
-        observer.observe(section);
-      });
-    }
-
-    // Performance: Debounce resize events
-    function debounce(func, wait) {
-      let timeout;
-      return function executedFunction(...args) {
-        const later = () => {
-          clearTimeout(timeout);
-          func(...args);
-        };
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-      };
-    }
-
-    // Handle window resize for menu state
-    const handleResize = debounce(() => {
-      if (window.innerWidth > 600 && sideMenu) {
-        sideMenu.style.right = "";
-        sideMenu.removeAttribute("aria-hidden");
-      }
-    }, 250);
-
-    window.addEventListener('resize', handleResize);
-
-    // Initialize
-    document.addEventListener('DOMContentLoaded', function() {
-      // Set initial ARIA states
-      if (sideMenu && window.innerWidth <= 600) {
-        sideMenu.setAttribute("aria-hidden", "true");
-      }
-      
-      // Set initial tab states
-      const activeTab = document.querySelector('.tab-links.active-link');
-      if (activeTab) {
-        activeTab.setAttribute("aria-selected", "true");
-      }
-    });
-  </script>
-</body>
+  <script src="./script.js"></script>
 </html>
